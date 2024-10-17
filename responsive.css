@@ -1,0 +1,96 @@
+/* Default Styling for larger screens is already present */
+
+/* Media query for tablets (width: 768px and below) */
+@media (max-width: 768px) {
+
+    /* Make the navbar links stack vertically */
+    .navbar {
+        display: none;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+
+    /* Adjust logo size */
+    .logo {
+        font-size: 28px;
+    }
+
+    /* Adjust text size in the home-content section */
+    .home-content h1 {
+        font-size: 48px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+    }
+
+    /* Button resizing */
+    .home-content .start-btn {
+        width: 150px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    /* Adjust popup info buttons */
+    .popup-info .btn-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .popup-info .btn-group .info-btn {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Media query for mobile phones (width: 480px and below) */
+@media (max-width: 480px) {
+    body {
+        max-width: 480px;
+        margin-right: 10%;
+        height: auto;
+    }
+    main {
+        height: auto;
+        width: 480px;
+        margin-left: -7%;
+        margin-right: 10%;
+    }
+    .logo {
+        font-size: 24px;
+        margin-left: 2%;
+    }
+
+    .home-content {
+        margin-top: -20%;
+    }
+
+    .home-content h1 {
+        font-size: 28px;
+        margin-left: -37%;
+    }
+
+    .home-content p {
+        font-size: 12px;
+        margin-right: 38%;
+        padding: 2px;
+    }
+
+    .start-btn {
+        width: 130px;
+        height: 40px;
+        font-size: 14px;
+        padding: 10px 20px;
+        margin-left: -35%;
+    }
+
+    img,
+    .icon {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+}
