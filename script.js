@@ -49,7 +49,21 @@ tryAgainBtn.onclick = () => {
     headerScore();
 }
 
+// Go back to home after completing the quiz
 goHomeBtn.onclick = () => {
+    quizSection.classList.remove('active');
+    nextBtn.classList.remove('active');
+    resultBox.classList.remove('active');
+
+    questionCount = 0;
+    questionNumb = 1;
+    userScore = 0;
+    showQuestions(questionCount);
+    questionCounter(questionNumb);
+}
+
+// Leaving the game in between back to the homepage
+leaveBtn.onclick = () => {
     quizSection.classList.remove('active');
     nextBtn.classList.remove('active');
     resultBox.classList.remove('active');
